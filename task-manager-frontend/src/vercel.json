@@ -7,14 +7,14 @@
   ],
   "builds": [
     {
-      "src": "frontend/package.json",
+      "src": "task-manager-frontend/package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
       }
     },
     {
-      "src": "backend/index.js",
+      "src": "task-manager-backend/index.js",
       "use": "@vercel/node"
     }
   ]
