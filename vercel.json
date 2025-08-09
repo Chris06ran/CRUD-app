@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/task-manager-backend/index.js"
+    }
+  ],
+  "builds": [
+    {
+      "src": "task-manager-frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    },
+    {
+      "src": "task-manager-backend/index.js",
+      "use": "@vercel/node"
+    }
+  ]
+}
