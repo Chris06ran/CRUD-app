@@ -6,6 +6,10 @@ const express = require('express');
 const cors = require('cors');
 const { Pool } = require('pg');
 
+const pool = new Pool({
+  connectionString: process.env.psql 'postgresql://neondb_owner:npg_rqd6pce2wBsI@ep-long-cake-admruxd7-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
+});
+
 // Inicializa la aplicación Express
 const app = express();
 
