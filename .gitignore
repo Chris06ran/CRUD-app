@@ -1,0 +1,12 @@
+# Ignora las carpetas de dependencias
+node_modules
+
+# Archivos de entorno
+.env
+
+# Archivos de la build del frontend
+/frontend/dist
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
